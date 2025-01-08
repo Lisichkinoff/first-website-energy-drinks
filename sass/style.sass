@@ -1,0 +1,279 @@
+@import "normalizee.scss"
+@import "resets.scss"
+/* Параметры страницы */
+*
+    box-sizing: border-box
+body
+    font-family: Proxima Nova
+    background: #04A5AF
+    overflow-x: hidden
+.conteiner
+    max-width: 1440px
+    margin: 0 auto
+/* Основа основ */
+.main-section
+    max-height: 3200px
+    padding-top: 21px
+    &__nav-container
+        height: 1450px
+        align-items: center
+
+
+.product-section__fruit
+    position: absolute
+    height: 1000px
+.product-section__backgroundItemOne
+    position: relative
+    top: 450px
+    right: 120px
+    filter: blur(3px)
+    width: 400px
+    transform: rotate(-3deg)
+.product-section__backgroundItemTwo
+    width: 350px
+    position: relative
+    filter: blur(2px)
+    transform: rotate(-98.713deg)
+    top: -300px
+    left: 1200px
+.product-section__backgroundItemThree
+    position: relative
+    top: 460px
+    left: 700px
+    width: 420px
+    transform: rotate(-13.017deg)
+    filter: blur(2.5px)
+
+    
+/*Верхняя секция сайта*/
+.main-section__header-img
+    display: flex
+    float: left
+    width: 110px
+    height: 100px
+    padding-top: 28px
+    transform: rotate(-15deg)
+    margin-right: 25px
+.main-section__header-text
+    padding-top: 28px
+    color: #ffff
+    font-weight: 800
+    font-size: 48px
+/* Вкус энергетика */
+.main-section__text
+    position: absolute
+    margin-top: 120px
+/* Название вкуса */
+.main-section__text-taste
+    color: #ffff
+    font-weight: 800
+    font-size: 45px
+    margin-bottom: 10px
+/*Описание вкуса*/
+.main-section__text-taste_description_one
+    white-space: pre-line
+    color: #fff
+    font-weight: 700
+    font-size: 24px
+    width: 460px
+    margin-bottom: 10px
+.main-section__text-taste_description_two
+    white-space: pre-line
+    color: #fff
+    font-weight: 600
+    font-size: 15px
+    width: 460px
+    margin-bottom: 20px
+/*Кнопки для оформления заказа*/
+.main-section__btn
+    float: left
+    font-weight: 700
+    font-size: 25px
+    color: #fff
+    padding: 0px
+    width: 165px
+    height: 56px
+    border-radius: 30px
+    border: none
+    background: #276df0
+    box-shadow: 5px 10px 8px 0px rgba(0, 0, 0, 0.25)
+    margin-right: 80px
+    cursor: pointer
+    transition: all 450ms ease-in-out
+.main-section__btn:hover
+    fill: white
+    transform: scale(1.2)
+.main-section__btn:hover
+    background: linear-gradient(0deg,#A47CF3,#683FEA)
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4) inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2) 0px 0px 0px 4px rgba(255, 255, 255, 0.2) 0px 0px 180px 0px #9917FF
+    transform: translateY(-2px)
+.main-section__btn-two
+    font-weight: 700
+    font-size: 20px
+    color: #ffffff
+    padding: 0px
+    width: 165px
+    height: 56px
+    border-radius: 30px
+    border: none
+    background: #be2e87
+    box-shadow: 5px 10px 8px 0px rgba(0, 0, 0, 0.25)
+    cursor: pointer
+    transition: all 450ms ease-in-out
+.main-section__btn-two:hover
+    fill: white
+    transform: scale(1.2)
+.main-section__btn-two:hover
+    background: linear-gradient(0deg,#A47CF3,#683FEA)
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4) inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2) 0px 0px 0px 4px rgba(255, 255, 255, 0.2) 0px 0px 180px 0px #9917FF
+    transform: translateY(-2px)
+/* Банка энергетика */
+.section-two__pot
+    position: relative
+    float: right
+    display: flex
+    margin-right: 200px
+/* Таблица над банкой */
+.section-two__pot__table
+    position: absolute
+    top: 480px
+    left: 119px
+    width: 380px
+    height: 152px
+    background: #0bbcc9
+    border-radius: 20px
+    box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #ff0f93, inset -20px 0 80px #00ffff77, inset 20px 0 300px #ff0381, inset -20px 0 300px #0bfcfc, 0 0 50px #fff, -10px 0 80px #463a41, 10px 0 80px #0ff
+    animation: neon 1s infinite alternate
+@keyframes neon 
+  0% 
+    box-shadow: 0 0 5px #ffffffb9, 0 0 20px #ffffffbb, 0 0 30px #ffffffc2
+  100% 
+    box-shadow: 0 0 10px #ffffffc0, 0 0 40px #ffffffc7, 0 0 60px #ffffffd0
+.product-section__text
+    white-space: pre-line
+    padding-left: 13px
+    text-align: left
+    font-size: 18px
+    color: #ffffffb0
+    font-weight: 700
+    line-height: 20px
+.section-two-energy_bank
+    width: 300px
+    height: 750px
+    transform: rotate(17.506deg)
+    animation: move-up6 20s ease-in infinite alternate-reverse
+.product-section__pot:child(1)
+    animation-name: move-down1
+@keyframes move-up6 
+  to 
+    transform: translateY(-90px)
+.section-two__pot-background-one
+    transform: rotate(20.642deg)
+    mix-blend-mode: luminosity
+    z-index: -2
+    position: absolute
+    width: 700px
+    height: 700px
+    right: -210px
+    filter: blur(1px)
+.section-two__pot-background-two
+    transform: rotate(30deg)
+    mix-blend-mode: luminosity
+    z-index: -1
+    position: absolute
+    right: -150px
+    height: 672px
+/* Карточки вкусов */
+.card-conteiner
+    display: flex 
+    justify-content: space-around
+    width: 1447px
+    gap: 0px 20px
+    margin-bottom: 70px   
+.card
+    box-sizing: border-box
+    width: 300px
+    height: 254px
+    background: #a7535300
+    border: 3px solid
+    box-shadow: 12px 17px 51px rgba(2, 2, 2, 0.411)
+    backdrop-filter: blur(6px)
+    border-radius: 17px
+    cursor: pointer
+    transition: all 0.5s
+    display: flex
+    align-items: center
+    user-select: none
+    font-weight: bolder
+    color: #f3f3f3
+    flex-direction: column
+.card:hover
+    border: 1px solid black
+    transform: scale(1.05)
+.card:active 
+    transform: scale(0.95) rotateZ(1.7deg)
+.card-conteiner-img-1
+    padding-top: 12px
+    width: 80px
+    height: 228px
+.card-conteiner-img-2
+    padding-top: 8px
+    width: 80px
+    height: 228px
+.card-conteiner-img-3
+    padding-top: 8px
+    width: 80px
+    height: 228px
+.card-conteiner-img-4
+    padding-top: 8px
+    width: 80px
+    height: 228px
+.card-conteiner-img-5
+    padding-top: 8px
+    width: 80px
+    height: 228px
+.card-conteiner-img-6
+    padding-top: 8px
+    width: 80px
+    height: 228px
+/* Контакты */
+h3
+    text-align: center
+    color: #FFF
+    font-weight: 800
+    font-size: 45px
+.section-three__social-paragraph
+    position: relative
+    width: 800px
+    color: #FFF
+    font-weight: 800
+    text-align: center
+    font-size: 30px
+    line-height: 30px
+    margin-left: 310px
+    margin-bottom: 80px
+.section-three__social-icon-one
+    position: absolute
+    width: 60px
+    top: 1240px
+.section-three__social-icon-two
+    position: absolute
+    margin-left: 70px
+    width: 60px
+    top: 1240px
+.section-three__social-icon-three
+    position: absolute
+    margin-left: 140px
+    width: 60px
+    top: 1240px
+.section-three__social-paragraph-two
+    color: #FFF
+    font-weight: 800
+    font-size: 17px
+    float: left
+.section-three__social-paragraph-three
+    width: 450px
+    color: #FFF
+    font-size: 17px
+    font-weight: 800
+    float: right

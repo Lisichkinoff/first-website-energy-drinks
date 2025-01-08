@@ -1,0 +1,733 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Параметры страницы */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Proxima Nova;
+  background: #04A5AF;
+  overflow-x: hidden;
+}
+
+.conteiner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Основа основ */
+.main-section {
+  max-height: 3200px;
+  padding-top: 21px;
+}
+.main-section__nav-container {
+  height: 1450px;
+  align-items: center;
+}
+
+.product-section__fruit {
+  position: absolute;
+  height: 1000px;
+}
+
+.product-section__backgroundItemOne {
+  position: relative;
+  top: 450px;
+  right: 120px;
+  filter: blur(3px);
+  width: 400px;
+  transform: rotate(-3deg);
+}
+
+.product-section__backgroundItemTwo {
+  width: 350px;
+  position: relative;
+  filter: blur(2px);
+  transform: rotate(-98.713deg);
+  top: -300px;
+  left: 1200px;
+}
+
+.product-section__backgroundItemThree {
+  position: relative;
+  top: 460px;
+  left: 700px;
+  width: 420px;
+  transform: rotate(-13.017deg);
+  filter: blur(2.5px);
+}
+
+/*Верхняя секция сайта*/
+.main-section__header-img {
+  display: flex;
+  float: left;
+  width: 110px;
+  height: 100px;
+  padding-top: 28px;
+  transform: rotate(-15deg);
+  margin-right: 25px;
+}
+
+.main-section__header-text {
+  padding-top: 28px;
+  color: white;
+  font-weight: 800;
+  font-size: 48px;
+}
+
+/* Вкус энергетика */
+.main-section__text {
+  position: absolute;
+  margin-top: 120px;
+}
+
+/* Название вкуса */
+.main-section__text-taste {
+  color: white;
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+/*Описание вкуса*/
+.main-section__text-taste_description_one {
+  white-space: pre-line;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  width: 460px;
+  margin-bottom: 10px;
+}
+
+.main-section__text-taste_description_two {
+  white-space: pre-line;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  width: 460px;
+  margin-bottom: 20px;
+}
+
+/*Кнопки для оформления заказа*/
+.main-section__btn {
+  float: left;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  padding: 0px;
+  width: 165px;
+  height: 56px;
+  border-radius: 30px;
+  border: none;
+  background: #276df0;
+  box-shadow: 5px 10px 8px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 80px;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.main-section__btn:hover {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.main-section__btn:hover {
+  background: linear-gradient(0deg, #A47CF3, #683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4) inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2) 0px 0px 0px 4px rgba(255, 255, 255, 0.2) 0px 0px 180px 0px #9917FF;
+  transform: translateY(-2px);
+}
+
+.main-section__btn-two {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 0px;
+  width: 165px;
+  height: 56px;
+  border-radius: 30px;
+  border: none;
+  background: #be2e87;
+  box-shadow: 5px 10px 8px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.main-section__btn-two:hover {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.main-section__btn-two:hover {
+  background: linear-gradient(0deg, #A47CF3, #683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4) inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2) 0px 0px 0px 4px rgba(255, 255, 255, 0.2) 0px 0px 180px 0px #9917FF;
+  transform: translateY(-2px);
+}
+
+/* Банка энергетика */
+.section-two__pot {
+  position: relative;
+  float: right;
+  display: flex;
+  margin-right: 200px;
+}
+
+/* Таблица над банкой */
+.section-two__pot__table {
+  position: absolute;
+  top: 480px;
+  left: 119px;
+  width: 380px;
+  height: 152px;
+  background: #0bbcc9;
+  border-radius: 20px;
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #ff0f93, inset -20px 0 80px rgba(0, 255, 255, 0.4666666667), inset 20px 0 300px #ff0381, inset -20px 0 300px #0bfcfc, 0 0 50px #fff, -10px 0 80px #463a41, 10px 0 80px #0ff;
+  animation: neon 1s infinite alternate;
+}
+
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7254901961), 0 0 20px rgba(255, 255, 255, 0.7333333333), 0 0 30px rgba(255, 255, 255, 0.7607843137);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7529411765), 0 0 40px rgba(255, 255, 255, 0.7803921569), 0 0 60px rgba(255, 255, 255, 0.8156862745);
+  }
+}
+.product-section__text {
+  white-space: pre-line;
+  padding-left: 13px;
+  text-align: left;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6901960784);
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.section-two-energy_bank {
+  width: 300px;
+  height: 750px;
+  transform: rotate(17.506deg);
+  animation: move-up6 20s ease-in infinite alternate-reverse;
+}
+
+.product-section__pot:child(1) {
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-90px);
+  }
+}
+.section-two__pot-background-one {
+  transform: rotate(20.642deg);
+  mix-blend-mode: luminosity;
+  z-index: -2;
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  right: -210px;
+  filter: blur(1px);
+}
+
+.section-two__pot-background-two {
+  transform: rotate(30deg);
+  mix-blend-mode: luminosity;
+  z-index: -1;
+  position: absolute;
+  right: -150px;
+  height: 672px;
+}
+
+/* Карточки вкусов */
+.card-conteiner {
+  display: flex;
+  justify-content: space-around;
+  width: 1447px;
+  gap: 0px 20px;
+  margin-bottom: 70px;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 300px;
+  height: 254px;
+  background: rgba(167, 83, 83, 0);
+  border: 3px solid;
+  box-shadow: 12px 17px 51px rgba(2, 2, 2, 0.411);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 17px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-weight: bolder;
+  color: #f3f3f3;
+  flex-direction: column;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card-conteiner-img-1 {
+  padding-top: 12px;
+  width: 80px;
+  height: 228px;
+}
+
+.card-conteiner-img-2 {
+  padding-top: 8px;
+  width: 80px;
+  height: 228px;
+}
+
+.card-conteiner-img-3 {
+  padding-top: 8px;
+  width: 80px;
+  height: 228px;
+}
+
+.card-conteiner-img-4 {
+  padding-top: 8px;
+  width: 80px;
+  height: 228px;
+}
+
+.card-conteiner-img-5 {
+  padding-top: 8px;
+  width: 80px;
+  height: 228px;
+}
+
+.card-conteiner-img-6 {
+  padding-top: 8px;
+  width: 80px;
+  height: 228px;
+}
+
+/* Контакты */
+h3 {
+  text-align: center;
+  color: #FFF;
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.section-three__social-paragraph {
+  position: relative;
+  width: 800px;
+  color: #FFF;
+  font-weight: 800;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 310px;
+  margin-bottom: 80px;
+}
+
+.section-three__social-icon-one {
+  position: absolute;
+  width: 60px;
+  top: 1240px;
+}
+
+.section-three__social-icon-two {
+  position: absolute;
+  margin-left: 70px;
+  width: 60px;
+  top: 1240px;
+}
+
+.section-three__social-icon-three {
+  position: absolute;
+  margin-left: 140px;
+  width: 60px;
+  top: 1240px;
+}
+
+.section-three__social-paragraph-two {
+  color: #FFF;
+  font-weight: 800;
+  font-size: 17px;
+  float: left;
+}
+
+.section-three__social-paragraph-three {
+  width: 450px;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 800;
+  float: right;
+}/*# sourceMappingURL=style.css.map */
